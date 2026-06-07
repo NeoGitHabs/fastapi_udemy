@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from .models import STATUS_CHOICES, TYPE_CHOICES
+from fastapi_udemy.db.models import STATUS_CHOICES, TYPE_CHOICES
 from typing import Optional
 from datetime import datetime
 
