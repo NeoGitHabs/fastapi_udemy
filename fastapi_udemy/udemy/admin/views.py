@@ -1,4 +1,3 @@
-from pydantic_core.core_schema import model_field
 from udemy.db.models import UserProfile, Category, Course, Lesson, Review
 from sqladmin import ModelView
 

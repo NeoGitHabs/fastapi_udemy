@@ -33,16 +33,13 @@ class UserProfileSchema(BaseModel):
     phone_number: str | None
     age: Optional[int] = None
     profile_picture: str | None
-    password: str
     created_date: datetime
 
     class Config:
         from_attributes = True
 
-# -----------------------------------------------------------------
 
 class CategoryCreateSchema(BaseModel):
-    id: int
     category_name: str
 
     class Config:
@@ -55,7 +52,6 @@ class CategorySchema(BaseModel):
     class Config:
         from_attributes = True
 
-# -----------------------------------------------------------------
 
 class CourseCreateSchema(BaseModel):
     course_name: str
@@ -85,7 +81,6 @@ class CourseSchema(BaseModel):
     class Config:
         from_attributes = True
 
-# -----------------------------------------------------------------
 
 class LessonCreateSchema(BaseModel):
     title: str
@@ -108,7 +103,6 @@ class LessonSchema(BaseModel):
     class Config:
         from_attributes = True
 
-# -----------------------------------------------------------------
 
 class ReviewCreateSchema(BaseModel):
     text: str | None
